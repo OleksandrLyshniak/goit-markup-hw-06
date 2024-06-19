@@ -42,15 +42,17 @@ img {
     overflow: hidden;
   }
 
+.container {
+    /* width: 1158px;
+    padding: 0 15px; */
+    width: 320px;
+    margin: 0 auto;
+}
 
 /* Стилі Хедер */
 
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px
-}
+
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -247,12 +249,6 @@ img {
     justify-content: center;
     margin-bottom: 8px;
 }
-
-/* .icon {
-    position: absolute;
-    top: 24px;
-    left: 100px;
-} */
         
 .categories-title {
     font-weight: 500;
@@ -273,22 +269,22 @@ img {
 
 .section-our-team {
     background-color: #F4F4FD;
-    padding: 120px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 32px;
+    padding: 96px 28px;
+    gap: 72px;
 }
 
 .team-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 }
 
 .timets-box {
     background-color: #fff;
     border-radius: 0 0 4px 4px;
-    width: calc((100% - 72px) / 4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -319,8 +315,8 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
     justify-content: center;
+    gap: 20px;
 }
 
 .item-sociale {
@@ -807,3 +803,40 @@ img {
     color: #4d5ae5;
     margin-left: 4px;
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .section-our-team {
+        padding: 96px 108px;
+    }
+    .team-list {
+        gap: 64px 24px;
+    }
+
+    .list-sociale {
+        gap: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+
+    .section-our-team {
+        padding: 120px 0;
+        gap: 32px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+}
+
