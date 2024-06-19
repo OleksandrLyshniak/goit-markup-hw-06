@@ -225,38 +225,38 @@ img {
 
         /* секція Послуги */
 
-.features {
-    padding: 120px 0
+.features .container {
+    padding: 96px 16px;
 }
 
 .features-list {
     display: flex;
-    gap: 24px;
-}
-
-.features-items {
-    width: calc((100% - 72px) / 4);
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .features-icon {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    background-color: #f4f4fd;
-    height: 112px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
         
 .categories-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
 }
 
 .categories-text {
@@ -271,8 +271,10 @@ img {
     background-color: #F4F4FD;
     display: flex;
     align-items: center;
+}
+
+.section-our-team .container {
     padding: 96px 28px;
-    gap: 72px;
 }
 
 .team-list {
@@ -810,8 +812,17 @@ img {
     .container {
         width: 768px;
     }
+    .features-list {
+        gap: 72px 24px;
+    }
 
-    .section-our-team {
+    .features-items {
+        width: calc((100% - 32px) / 2);
+    }
+
+
+
+    .section-our-team .container {
         padding: 96px 108px;
     }
     .team-list {
@@ -829,6 +840,42 @@ img {
         width: 1440px;
     }
 
+    .features .container {
+        padding: 120px 156px;
+    }
+
+    .features-list {
+        gap: 24px;
+    }
+ 
+    .features-items {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .features-icon {
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background-color: #f4f4fd;
+        height: 112px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+
+        width: 100%;
+        padding: 0;
+        white-space: wrap;
+        clip-path: none;
+        clip: rect(0 0 0 1);
+        overflow: visible;
+    }
+
+    .categories-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
     .section-our-team {
         padding: 120px 0;
         gap: 32px;
@@ -840,3 +887,8 @@ img {
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+        .categories-title {
+        text-align: start;
+    }
+}
