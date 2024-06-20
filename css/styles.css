@@ -170,13 +170,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: start;
-    flex-direction: column;
-    gap: 48px;
-    padding: 188px 0;
     max-width: 1440px;
-    height: 600px;
     background-size: cover;
     margin: 0 auto;
+
+    max-height: 432px;
+    justify-content: center;
 }
 
 .title-box .container {
@@ -184,20 +183,21 @@ img {
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    gap: 48px;
+    padding: 72px 52px;
+    gap: 72px;
 }
 
 .main-title {
     max-width: 496px;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
     margin: auto;
-    width: 496px;
-    height: 120px;
+    font-size: 36px;
+    line-height: 1.11;
+    width: 216px;
+    height: 160px;
 }
 
 .button {
@@ -871,6 +871,22 @@ img {
     .form-placeholder {
         width: 264px;
     }
+
+    .title-box {
+        height: 436px;
+    }
+
+    .title-box .container {
+        padding: 112px 136px;
+        gap: 36px;
+    }
+
+    .main-title {
+        font-size: 56px;
+        line-height: 1.07;
+        width: 496px;
+        height: 120px;
+    }
     
 }
 
@@ -957,6 +973,14 @@ img {
         align-items: flex-start;
         justify-content: center;
         gap: 24px;
+    }
+
+    .title-box {
+        height: 600px;
+    }
+
+    .title-box .container {
+        gap: 48px;
     }
 
 }
